@@ -8,8 +8,8 @@ public class testPrimeNumbers {
 
 	@Test
 	public void test() {
-		primeNumbers primes = new PrimeNumbers();
-		fail("Not yet implemented");
+		primeNumbers primes = new primeNumbers();
+		assertEquals("", primes.calcPrimes(1));
 	}
 	
 	
