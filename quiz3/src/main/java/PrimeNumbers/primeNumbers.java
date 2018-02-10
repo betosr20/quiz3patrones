@@ -1,16 +1,22 @@
 package PrimeNumbers;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class primeNumbers {
 
-	public String calcPrimes(int i) {
-		String resultado;
-		
-		if (i>1) {
-			resultado = "2";
-		}else {
-			resultado = "";
+	public List<Integer> calcPrimes(int pnumero) {
+		List <Integer> factores=  new ArrayList<>();
+		if (pnumero>1) {
+	        int numero = pnumero;
+	        for (int i = 2; i <= numero; i++) {
+	            if (numero % i == 0) {
+	            	factores.add(numero);
+	                numero /= i;
+	                i--;
+	            }
+	        }
 		}
-		return resultado;
+		return factores;
 	}
-
 }
