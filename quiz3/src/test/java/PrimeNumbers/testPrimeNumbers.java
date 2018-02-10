@@ -12,6 +12,12 @@ public class testPrimeNumbers {
 		assertEquals("", primes.calcPrimes(1));
 	}
 	
+	@Test
+	public void test2() {
+		primeNumbers primes = new primeNumbers();
+		assertEquals("2", primes.calcPrimes(2));
+	}
+	
 	
 
 }
