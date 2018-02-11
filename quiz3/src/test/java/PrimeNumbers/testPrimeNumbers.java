@@ -47,4 +47,10 @@ public class testPrimeNumbers {
 		assertEquals(testList, primes.calcPrimes(5));
 	}
 
+	@Test
+public void test6() {
+	testList.add(2);
+	testList.add(3);
+	assertEquals(testList, primes.calcPrimes(6));
+	}
 }
