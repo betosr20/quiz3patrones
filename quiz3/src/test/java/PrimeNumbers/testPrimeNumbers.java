@@ -53,4 +53,21 @@ public void test6() {
 	testList.add(3);
 	assertEquals(testList, primes.calcPrimes(6));
 	}
+
+	@Test
+public void test7() {
+	testList.add(7);
+	assertEquals(testList, primes.calcPrimes(7));
+	}
+
+	@Test
+public void test8() {
+	testList.add(2);
+	testList.add(2);
+	testList.add(2);
+	assertEquals(testList, primes.calcPrimes(8));
+	}
+
+
+
 }
