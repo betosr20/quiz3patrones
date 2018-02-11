@@ -68,6 +68,11 @@ public void test8() {
 	assertEquals(testList, primes.calcPrimes(8));
 	}
 
-
+	@Test
+public void test9() {
+	testList.add(3);
+	testList.add(3);
+	assertEquals(testList, primes.calcPrimes(9));
+	}
 
 }
