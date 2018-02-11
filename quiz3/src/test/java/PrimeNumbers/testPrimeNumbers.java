@@ -92,5 +92,14 @@ public void test11() {
 	assertEquals(testList, primes.calcPrimes(42));
 	}
 
-
+	@Test
+public void test12() {
+	testList.add(2);
+	testList.add(2);
+	testList.add(3);
+	testList.add(5);
+	testList.add(7);
+	testList.add(11);
+	assertEquals(testList, primes.calcPrimes(4620));
+	}
 }
