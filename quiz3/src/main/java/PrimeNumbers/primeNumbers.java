@@ -5,7 +5,7 @@ import java.util.List;
 
 public class primeNumbers {
 
-	public List<Integer> calcPrimes(int pnumero) {
+	public List<Integer> generate(int pnumero) {
 		List <Integer> factores=  new ArrayList<>();
 	        int numero = pnumero;
 	        for (int i = 2; i <= numero; i++) {

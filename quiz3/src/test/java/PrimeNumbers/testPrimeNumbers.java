@@ -19,45 +19,45 @@ public class testPrimeNumbers {
 	
 	@Test
 	public void test() {
-		assertEquals(testList, primes.calcPrimes(1));
+		assertEquals(testList, primes.generate(1));
 	}
 	
 	@Test
 	public void test2() {
 		testList.add(2);
-		assertEquals(testList, primes.calcPrimes(2));
+		assertEquals(testList, primes.generate(2));
 	}
 
 	@Test
 	public void test3() {
 		testList.add(3);
-		assertEquals(testList, primes.calcPrimes(3));
+		assertEquals(testList, primes.generate(3));
 	}
 	
 	@Test
 	public void test4() {
 		testList.add(2);
 		testList.add(2);
-		assertEquals(testList, primes.calcPrimes(4));
+		assertEquals(testList, primes.generate(4));
 	}
 
 	@Test
 	public void test5() {
 		testList.add(5);
-		assertEquals(testList, primes.calcPrimes(5));
+		assertEquals(testList, primes.generate(5));
 	}
 
 	@Test
 public void test6() {
 	testList.add(2);
 	testList.add(3);
-	assertEquals(testList, primes.calcPrimes(6));
+	assertEquals(testList, primes.generate(6));
 	}
 
 	@Test
 public void test7() {
 	testList.add(7);
-	assertEquals(testList, primes.calcPrimes(7));
+	assertEquals(testList, primes.generate(7));
 	}
 
 	@Test
@@ -65,14 +65,14 @@ public void test8() {
 	testList.add(2);
 	testList.add(2);
 	testList.add(2);
-	assertEquals(testList, primes.calcPrimes(8));
+	assertEquals(testList, primes.generate(8));
 	}
 
 	@Test
 public void test9() {
 	testList.add(3);
 	testList.add(3);
-	assertEquals(testList, primes.calcPrimes(9));
+	assertEquals(testList, primes.generate(9));
 	}
 
 	@Test
@@ -81,7 +81,7 @@ public void test10() {
 	testList.add(2);
 	testList.add(3);
 	testList.add(3);
-	assertEquals(testList, primes.calcPrimes(36));
+	assertEquals(testList, primes.generate(36));
 	}
 
 	@Test
@@ -89,7 +89,7 @@ public void test11() {
 	testList.add(2);
 	testList.add(3);
 	testList.add(7);
-	assertEquals(testList, primes.calcPrimes(42));
+	assertEquals(testList, primes.generate(42));
 	}
 
 	@Test
@@ -100,6 +100,6 @@ public void test12() {
 	testList.add(5);
 	testList.add(7);
 	testList.add(11);
-	assertEquals(testList, primes.calcPrimes(4620));
+	assertEquals(testList, primes.generate(4620));
 	}
 }
